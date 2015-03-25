@@ -1,17 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="background_color">#fdfdfd</color>
-    <color name="font_color">#333</color>
-    
-    <style name="AHUTLesson" parent="Theme.Sherlock.Light">
-	    <item name="android:windowBackground">@color/background_color</item>
-        <item name="android:buttonStyle">@style/AHUTLessonButton</item> 
-	</style>
-    <style name="AHUTLessonButton" parent="@android:style/Widget.Button"> 
-        <item name="android:background">@drawable/button</item>
-        <item name="android:gravity">center</item>tem>
-        <item name="android:padding">10dp</item>
-        <item name="android:textColor">@color/font_color</item>
-        <item name="android:textSize">16sp</item>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
     </style>
+    
+    <style name="Theme.App.Blue" parent="MyTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+       
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryDark">@color/theme_blue</item>
+        <item name="colorAccent">@color/theme_blue</item>
+    </style>
+    
+   	<style name="MyTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+   	</style>
+    
+    <!--阅读器的actionbar  -->
+    <style name="Reader" parent="Theme.App.Blue">
+        <item name="android:titleTextStyle">@style/MyReaderTitle</item>
+    </style>
+    
+    <style name="MyReaderTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    	<!-- alertDialog的设置 -->
+    	<!-- SuperButton -->
+    <style name="TextAppearance">
+        <item name="@android:textColor">#003aff</item>
+        <item name="@android:textColorHint">?attr/textColorHint</item>
+        <item name="@android:textColorHighlight">#000</item>
+        <item name="@android:textColorLink">#ff0</item>
+        <item name="@android:textSize">@dimen/text_small</item>
+        <item name="@android:fontFamily">sans-serif</item>
+        <item name="@android:textStyle">normal</item>
+    </style>
+	<style name="TextView" parent="@android:style/Widget.TextView">
+    </style>
+
+    <style name="TextView.Dialog">
+        <item name="@android:textAppearance">@style/TextAppearance.LittleSmall</item>
+    </style>
+
+    <style name="TextView.Dark.Dialog" parent="@style/TextView.Dialog">
+    </style>
+    
+	<style name="EditText" parent="@android:style/Widget.EditText">
+    </style>
+	<style name="EditText.Dialog">
+        <item name="@android:textAppearance">@style/TextAppearance.LittleSmall</item>
+    </style>
+
+    <style name="EditText.Dark.Dialog" parent="@style/EditText.Dialog">
+    </style>
+    <style name="TextAppearance.Small">
+    </style>
+    
+
+    <style name="TextAppearance.LittleSmall">
+        <item name="@android:textSize">@dimen/text_little_small</item>
+    </style>
+
+    <style name="TextAppearance.Medium">
+        <item name="@android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="TextAppearance.Large">
+        <item name="@android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="TextAppearance.DialogTitle">
+        <item name="@android:textColor">?attr/textColorTitle</item>
+        <item name="@android:textSize">@dimen/text_little_large</item>
+    </style>
+
+    <style name="TextAppearance.DialogMessage">
+        <item name="@android:textSize">@dimen/text_little_small</item>
+    </style>
+
+    <style name="TextAppearance.DropDownItem" parent="TextAppearance.DialogMessage">
+    </style>
+
+    <style name="TextAppearance.SuperButton">
+        <item name="@android:fontFamily">sans-serif-medium</item>
+        <item name="@android:textAllCaps">true</item>
+        <item name="@android:singleLine">true</item>
+    </style>
+
+    <style name="TextAppearance.SuperButton.Small">
+        <item name="@android:textSize">13sp</item>
+    </style>
+
+    <style name="TextAppearance.DialogButton" parent="TextAppearance.LittleSmall">
+        <!-- <item name="@android:textColor">#003aff</item> -->
+        <item name="@android:textAllCaps">true</item>
+    </style>
+    
+    <style name="DialogButton" parent="@android:Widget.Button">
+        <item name="@android:background">@null</item>
+        <item name="@android:textAppearance">@style/TextAppearance.DialogButton</item>
+        <!-- <item name="@android:textColor">#003aff</item> -->
+        <item name="@android:minWidth">48dp</item>
+        <item name="@android:minHeight">36dp</item>
+        <item name="@android:maxLines">2</item>
+        <item name="@android:paddingLeft">16dp</item>
+        <item name="@android:paddingRight">16dp</item>
+    </style>
+    <style name="DropDownItem" parent="@android:Widget.DropDownItem">
+        <item name="@android:textAppearance">@style/TextAppearance.DropDownItem</item>
+        <item name="@android:paddingLeft">8dp</item>
+        <item name="@android:paddingRight">8dp</item>
+    </style>
+
+    <style name="DropDownItem.Spinner">
+    </style>
+   
+    
+    <!-- 欢迎界面 -->
+    <style name="MyWeclome" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen"></style>
+    
+    <!-- 选中颜色变化 -->
+    <style name="DrawerItem">
+		<item name="android:background">@drawable/drawer_selector</item>
+	</style>
 </resources>

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/toolbar"/>
+    
+    <ScrollView 
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
-
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -97,8 +105,31 @@
                     android:hint="结束周"
                     android:inputType="textNoSuggestions" >
                 </EditText>
+                
+                
+               
             </LinearLayout>
+            <!-- <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    >
+                    <Button 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Edit_Ok"
+                        android:text="ok"/>
+                    <Button 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Edit_Cancel"
+                        android:layout_toRightOf="@id/Edit_Ok"
+                        android:layout_marginLeft="145dp"
+                        android:text="Cancle"
+                        />
+            </RelativeLayout> -->
         </LinearLayout>
     </LinearLayout>
 
 </ScrollView>
+</LinearLayout>

@@ -3,82 +3,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+   <include layout="@layout/toolbar"/>
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp" >
+            android:gravity="center"
+            >
+            <ImageView 
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="80dp"
+                android:scaleType="fitXY"/>
+           <EditText
+			     android:id="@+id/etLoginXH"
+			     android:layout_width="280dp"
+			     android:layout_height="wrap_content"
+			     android:layout_marginTop="70dp"
+			     android:hint="输入学号"
+			     android:textColorHint="#6c83b2"
+			     android:inputType="number"
+			     android:singleLine="true" />
+   
+			<EditText
+		       android:id="@+id/etLoginPassword"
+		       android:layout_width="280dp"
+		       android:layout_height="wrap_content"
+		       android:hint="输入密码"
+		       android:textColorHint="#6c83b2"
+			   android:inputType="textPassword" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:layout_marginTop="10dp">
+	  <Button
+	   android:layout_width="280dp"
+       android:layout_height="wrap_content"
+       android:text="登录"
+       android:id="@+id/btnLogin"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="登录已有帐号"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="3dp"
-                android:text="此帐号与课友网（ahutlesson.com）互通" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp" >
-
-                <EditText
-                    android:id="@+id/etLoginXH"
-                    android:layout_width="115dp"
-                    android:layout_height="wrap_content"
-                    android:hint="学号"
-                    android:inputType="number"
-                    android:singleLine="true" >
-                </EditText>
-
-                <EditText
-                    android:id="@+id/etLoginPassword"
-                    android:layout_width="115dp"
-                    android:layout_height="wrap_content"
-                    android:hint="密码"
-                    android:inputType="textPassword" >
-                </EditText>
-
-                <Button
-                    android:id="@+id/btnLogin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="登录"
-                    android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/btnToRegister"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="注册新帐号"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:autoLink="web"
-                android:gravity="center"
-                android:lineSpacingExtra="5dp"
-                android:text="@string/web_link" />
-        </LinearLayout>
-    </ScrollView>
-
+	<Button
+	   android:layout_width="280dp"
+       android:layout_height="wrap_content"
+       android:text="注册"
+       android:id="@+id/btnToRegister"
+       android:layout_marginTop="20dp"
+       android:background="#00000000" />  
+	</LinearLayout>
+       </LinearLayout>
+   </ScrollView>
 </LinearLayout>

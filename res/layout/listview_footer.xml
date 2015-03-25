@@ -10,9 +10,10 @@
 
     <TextView
         android:id="@+id/tvNextPage"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="下一页"
+        android:gravity="center"
+        android:text="更多"
         android:textSize="18sp" />
 
 </LinearLayout>

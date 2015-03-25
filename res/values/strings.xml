@@ -2,12 +2,14 @@
 <resources>
     
 	<string name="app_name">课友</string>
+	<string name="net">教学通知</string>
     <string name="changelog_full_title">更新记录</string>
     <string name="changelog_title">新版功能：</string>
     <string name="changelog_ok_button">知道了</string>
     <string name="changelog_show_full">更多...</string>
 	<string name="about">关于</string>
 	<string name="share">分享</string>
+	<string name="search">搜索</string>
     <string name="setting">设置</string>
     <string name="add">添加</string>
     <string name="edit">编辑</string>
@@ -19,10 +21,12 @@
     <string name="timetable_viewer">课表浏览器</string>
     <string name="lessonmate_similarity">“课友度”搜索</string>
     
-    <string name="web_link">课友微信公众号: ahutapp \n课友网页版: http://ahutlesson.com \n安工大APP: http://ahutapp.com \n我的新浪微博: http://weibo.com/ohrz</string>
+    <!-- <string name="web_link">课友微信公众号: ahutapp \n课友网页版: http://ahutlesson.com \n安工大APP: http://ahutapp.com \n我的新浪微博: http://weibo.com/ohrz</string> -->
     
     <string name="neterror">连接服务器失败，请检查手机网络设置</string>
   
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
 	<string-array name="week_name">
 		<item>周一</item>
 		<item>周二</item>

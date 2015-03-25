@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/example/ahut_view/GridView.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/example/ahut/MainActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/example/ahut/MainActivity.java" />
+        <ignore path="src/com/example/ahut_drawer/ActionBarDrawerToggle.java" />
+    </issue>
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+    <issue id="ShowToast">
+        <ignore path="src/com/example/ahut_appwidget/AppWidget.java" />
+    </issue>
+</lint>

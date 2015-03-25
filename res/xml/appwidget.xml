@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="294dp"   
+	android:minHeight="500dp"  
+	android:updatePeriodMillis="6400000"   
+	android:initialLayout="@layout/ahut_appwidget"
+	 >    
+</appwidget-provider>
